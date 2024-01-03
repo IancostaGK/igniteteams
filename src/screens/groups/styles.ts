@@ -1,3 +1,4 @@
+import { CaretLeft } from 'phosphor-react-native';
 import styled from 'styled-components/native';
 
 export const Container = styled.SafeAreaView`
@@ -10,3 +11,12 @@ export const Title = styled.Text`
   color: #fff;
   font-size: 32px;
 `;
+
+export const BackButton = styled.TouchableOpacity`
+  flex: 1;
+`;
+
+export const BackIcon = styled(CaretLeft).attrs(({ theme }) => ({
+  size: 32,
+  color: theme.colors.white,
+}))``;
