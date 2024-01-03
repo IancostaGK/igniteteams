@@ -1,9 +1,10 @@
-import { Text, View } from 'react-native';
+import { Header } from '@components/header';
+import { Container } from './styles';
 
-export default function Groups() {
+export function Groups() {
   return (
-    <View>
-      <Text>Groups</Text>
-    </View>
+    <Container>
+      <Header></Header>
+    </Container>
   );
 }
