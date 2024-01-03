@@ -7,11 +7,6 @@ export const Container = styled.SafeAreaView`
   align-items: center;
 `;
 
-export const Title = styled.Text`
-  color: #fff;
-  font-size: 32px;
-`;
-
 export const BackButton = styled.TouchableOpacity`
   flex: 1;
 `;
