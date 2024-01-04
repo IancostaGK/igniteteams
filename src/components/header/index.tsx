@@ -1,6 +1,5 @@
 import LogoImg from '@assets/logo.png';
-import { BackButton, BackIcon } from '@screens/groups/styles';
-import { Container, Logo } from './styles';
+import { BackButton, BackIcon, Container, Logo } from './styles';
 
 type Props = {
   showBackButton?: boolean;

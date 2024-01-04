@@ -4,10 +4,10 @@ import {
   Roboto_700Bold,
   useFonts,
 } from '@expo-google-fonts/roboto';
+import { NewGroup } from '@screens/newGroup';
 import theme from '@theme/index';
 import { StatusBar } from 'react-native';
 import { ThemeProvider } from 'styled-components';
-import { Groups } from './src/screens/groups';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -22,7 +22,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Groups /> : <Loading />}
+      {fontsLoaded ? <NewGroup /> : <Loading />}
     </ThemeProvider>
   );
 }
