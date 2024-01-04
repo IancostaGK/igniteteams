@@ -5,7 +5,7 @@ export const Container = styled(TextInput).attrs(({ theme }) => ({
   placeholderTextColor: theme.colors.gray300 as ColorValue,
 }))`
   flex: 1;
-  width: 90%;
+  width: 100%;
   min-height: 56px;
   max-height: 56px;
   border-radius: 6px;
