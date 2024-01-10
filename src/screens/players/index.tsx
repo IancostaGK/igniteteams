@@ -6,20 +6,24 @@ import { Header } from '@components/header';
 import { Hightlight } from '@components/highlight';
 import { Input } from '@components/input';
 import { PlayerCard } from '@components/playerCard';
+import { useRoute } from '@react-navigation/native';
 import React, { useState } from 'react';
 import { FlatList } from 'react-native';
 import { Container, Form, HeaderList, NumberOfPlayers } from './styles';
 
 export function Players() {
+  const route = useRoute();
   const [team, setTeam] = useState('Time A');
   const [players, setPlayers] = useState(['Ian', 'Bruno', 'Marcio', 'Renan']);
+
+  const { group } = route.params as { group: string };
 
   return (
     <Container>
       <Header showBackButton />
 
       <Hightlight
-        title="Nome da Turma"
+        title={group}
         subtitle="Adicione a galera e separe os times"
       />
 
